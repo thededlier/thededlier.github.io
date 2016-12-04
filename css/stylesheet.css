@@ -2,8 +2,16 @@ body {
     background-color: #272822;
 }
 
+.center {
+    text-align: center;
+}
+
 .header {
     color: #da2774;
+}
+
+.header > hr {
+    width: 125px;
 }
 
 .widget-content {
@@ -14,4 +22,29 @@ body {
     text-align: left;
     color: #ffffff;
     font-size: 14px;
+}
+
+.contact-link {
+    padding: 20px 120px 20px 20px;
+}
+
+.contact-link > h4 {
+    color : #aa5b22;
+}
+
+.contact-link > a {
+    text-decoration: none;
+    color: #6adbd6;
+}
+
+.contact-link > a:hover {
+    color: #7162cb;
+}
+
+.contact-address {
+    padding: 20px 120px 20px 20px;
+}
+
+.contact-address > h4 {
+    color: #d9dc78;
 }
