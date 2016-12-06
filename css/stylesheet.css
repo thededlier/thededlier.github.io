@@ -8,6 +8,11 @@ body {
     margin-bottom: 60px;
 }
 
+.brace {
+    font-size: 18px;
+    color: #ffffff;
+}
+
 .special-hr {
 	height: 6px;
 	background: url(http://ibrahimjabbari.com/english/images/hr-11.png) repeat-x 0 0;
@@ -37,11 +42,12 @@ body {
 }
 
 .contact-link {
-    padding: 20px 120px 20px 20px;
+    padding: 0px 20px 0px 20px;
 }
 
-.contact-link > h4 {
+.contact-link {
     color : #aa5b22;
+    font-size: 18px;
 }
 
 .contact-link > a {
