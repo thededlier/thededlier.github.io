@@ -41,11 +41,14 @@ body {
     font-size: 14px;
 }
 
-.contact-link {
-    padding: 0px 20px 0px 20px;
+.skill-item {
+    padding: 0px 20px 0px 20px; 
+    font-size: 18px;
+    color: #00ff00;
 }
 
 .contact-link {
+    padding: 0px 20px 0px 20px;
     color : #aa5b22;
     font-size: 18px;
 }
@@ -61,10 +64,6 @@ body {
 
 .contact-address {
     padding: 20px 120px 20px 20px;
-}
-
-.contact-address > h4 {
-    color: #d9dc78;
 }
 
 .footer {
