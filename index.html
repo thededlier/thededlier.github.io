@@ -7,7 +7,7 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">    
     <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/jquery-1.9.1.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="./js/bootstrap.min.js"></script>
     <!-- Sweet Alerts-->
@@ -15,6 +15,10 @@
     <link rel="stylesheet" type="text/css" href="css/sweetalert.css">
     <!-- Font Awesome-->
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <!-- Owl Carousel-->
+    <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+    <script src="owl-carousel/owl.carousel.js"></script>
     <!-- Custom stylesheet -->
     <link rel="stylesheet" href="./css/stylesheet.css">
 </head>
@@ -55,6 +59,32 @@
             </div>
         </div>
         <hr class="special-hr">
+        <!-- Portfolio -->
+        <div class="row">
+            <div class="widget">
+                <div class="widget-content">
+                    <div class="header center">
+                        <h1> My Projects </h1>
+                        <hr>
+                    </div>
+                </div>
+                <div class="widget-body">
+                    <div class="row">
+                        <div class="span12">
+                            <div id="portfolio" class="owl-carousel">
+
+                                <div class="item"><img src="assets/img/code2.png" alt="The Last of us"></div>
+                                <div class="item"><img src="assets/img/code2.png" alt="GTA V"></div>
+                                <div class="item"><img src="assets/img/code2.png" alt="Mirror Edge"></div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="special-hr">
+        <!-- Skills -->
         <div class="row">
             <div class="widget">
                 <div class="widget-content">
@@ -161,6 +191,7 @@
       </div>
     </footer>
    
+    <!-- Download Resumes alert function -->
     <script type="text/javascript">
         function downloadAlert() {
             swal({
@@ -184,6 +215,17 @@
                 }
             }); 
         }
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $("#portfolio").owlCarousel({
+                navigation : true,
+                slideSpeed : 300,
+                paginationSpeed : 400,
+                singleItem : true
+            });
+        });
     </script>
 
 </body>
