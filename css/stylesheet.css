@@ -78,6 +78,7 @@ body {
     background: rgb(39, 40, 34); /* For older browsers */
     background: rgba(39, 40, 34, 0.9);
 }
+
 .skill-item {
     padding: 0px 20px 0px 20px; 
     font-size: 18px;
