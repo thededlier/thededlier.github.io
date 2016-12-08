@@ -45,11 +45,39 @@ body {
     display: block;
     width: 100%;
     height: auto;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
 }
 
+.grayscale {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+    transition: 2s;
+    animation-timing-function:ease-in-out;
+}
+
+.grayscale:hover {
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+}
+
+.img-content {
+    display: block;
+    position: absolute;
+    top: 50px;
+    right: 35px;
+    background: rgb(39, 40, 34); /* For older browsers */
+    background: rgba(39, 40, 34, 0.5);
+    width: 300px;
+    height: 300px;
+    color: #ffffff;
+    text-shadow: 0 0 3px #000;
+    transition: 2s;
+    animation-timing-function: ease-in-out;
+}
+
+#portfolio .item:hover > .img-content {
+    background: rgb(39, 40, 34); /* For older browsers */
+    background: rgba(39, 40, 34, 0.9);
+}
 .skill-item {
     padding: 0px 20px 0px 20px; 
     font-size: 18px;
