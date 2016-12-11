@@ -47,6 +47,20 @@ body {
     height: auto;
 }
 
+.img-content > p {
+    color: #00ff00;
+    padding: 0 7px 0px 7px;
+    text-align: left;
+    transition: 2s;
+    animation-timing-function: ease-in;
+}
+
+.img-content > h1 {
+    color: #6c71c4;
+    transition: 2s;
+    animation-timing-function: ease-in;
+}
+
 .grayscale {
     -webkit-filter: grayscale(0);
     filter: grayscale(0);
@@ -67,16 +81,39 @@ body {
     background: rgb(39, 40, 34); /* For older browsers */
     background: rgba(39, 40, 34, 0.5);
     width: 300px;
-    height: 300px;
-    color: #ffffff;
+    height: 200px;
     text-shadow: 0 0 3px #000;
     transition: 2s;
-    animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in;
+}
+
+@media only screen and (max-width: 950px) {
+    .img-content {
+        display: block;
+        position: absolute;
+        top: 50px;
+        right: 35px;
+        background: rgb(39, 40, 34); /* For older browsers */
+        background: rgba(39, 40, 34, 0.5);
+        width: 200px;
+        height: 80px;
+        text-shadow: 0 0 3px #000;
+        transition: 2s;
+        animation-timing-function: ease-in;
+    }
 }
 
 #portfolio .item:hover > .img-content {
     background: rgb(39, 40, 34); /* For older browsers */
     background: rgba(39, 40, 34, 0.9);
+}
+
+#portfolio .item:hover > .img-content > h1 {
+    color: #ffffff;
+}
+
+#portfolio .item:hover > .img-content > p {
+    color: #ffffff;
 }
 
 .skill-item {
