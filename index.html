@@ -20,16 +20,21 @@
     <link rel="stylesheet" href="owl-carousel/owl.theme.default.min.css">
     <script src="owl-carousel/owl.carousel.js"></script>
     <!-- Typed.js -->
-    <script src="js/typed.js"></script>
+    <script src="js/typed.min.js"></script>
     <!-- Custom stylesheet -->
     <link rel="stylesheet" href="./css/stylesheet.css">
 </head>
 
 <body>
+
     <nav class="nav navbar-inverse">
         <div class="container">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#">Rohan Anand</a>
+                <a class="navbar-brand" href="#">
+                    $
+                    <span class="brand"></span>
+                    <span class="typed-cursor"></span>
+                </a>
             </div>
             <!--<ul class="nav navbar-nav pull-right">
                 <li class="active"><a href="#">About</a></li>
@@ -47,7 +52,7 @@
                 <div class="col-lg-6 col-xs-12">
                     <div class="widget-content">
                         <div class="header">
-                            <h1>Hi! I'm Rohan</h1>
+                            <span> Hi! I'm Rohan.</span>
                         </div>
                         <div class="widget-body">
                             <p>
@@ -220,7 +225,7 @@
         <span>2016</span>
       </div>
     </footer>
-   
+
     <!-- Download Resumes alert function -->
     <script type="text/javascript">
         function downloadAlert() {
@@ -248,32 +253,39 @@
     </script>
 
     <script>
-        $(document).ready(function() {
+        var owl = $("#portfolio");
 
-            var owl = $("#portfolio");
-
-            owl.owlCarousel({
-                nav : true,
-                loop : true,
-                slideSpeed : 300,
-                paginationSpeed : 400,
-                items : 2,
-                center : true,
-                autoplay : true,
-                autoplayTimeout : 5000,
-                autoplayHoverPause : true,
-                autoplaySpeed : 1000,
-                responsive:{
-                    0:{
-                        items:1
-                    },
-                    600:{
-                        items:2
-                    },
-                    1000:{
-                        items:2
-                    }
+        owl.owlCarousel({
+            nav : true,
+            loop : true,
+            slideSpeed : 300,
+            paginationSpeed : 400,
+            items : 2,
+            center : true,
+            autoplay : true,
+            autoplayTimeout : 5000,
+            autoplayHoverPause : true,
+            autoplaySpeed : 1000,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:2
+                },
+                1000:{
+                    items:2
                 }
+            }
+        });
+    </script>
+    
+    <!-- Brand Typer-->
+    <script>
+        $("document").ready(function () {
+            $(".brand").typed({
+                strings: ["Rohan Anand"],
+                typeSpeed: 100
             });
         });
     </script>

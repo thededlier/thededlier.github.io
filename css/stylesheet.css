@@ -25,6 +25,7 @@ body {
 
 .header {
     color: #da2774;
+    font-size: 32px;
 }
 
 .header > hr {
@@ -149,3 +150,27 @@ body {
   line-height: 30px;
   background-color: #000000;
 }
+
+/* Typed.js */
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
