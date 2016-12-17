@@ -6,6 +6,13 @@ html {
 body {
     background-color: #272822;
     margin-bottom: 60px;
+    padding-top: 70px;
+}
+
+@media only screen and (max-width: 950px) {
+    body {
+        padding-top: 90px;
+    }
 }
 
 /* Hover Float Button */
@@ -69,7 +76,7 @@ body {
 .header {
     color: #da2774;
     font-size: 32px;
-    transition: 2s;
+    transition: 1s;
     animation-timing-function: ease-in-out;
 }
 
@@ -91,6 +98,30 @@ body {
     display: block;
     width: 100%;
     height: auto;
+}
+
+.owl-carousel {
+    -webkit-animation: colorChange 5s infinite;
+    -moz-animation: colorChange 5s infinite;
+    animation: colorChange 5s infinite;
+}
+
+@keyframes colorChange {
+    0%  { box-shadow: -2px -4px 5px -4px #474747; }
+    50% { box-shadow: -2px -4px 5px -4px #00FF00; }
+    100%{ box-shadow: -2px -4px 5px -4px #474747; }
+}
+
+@-webkit-keyframes colorChange {
+    0%  { box-shadow: -2px -4px 5px -4px #474747; }
+    50% { box-shadow: -2px -4px 5px -4px #00FF00; }
+    100%{ box-shadow: -2px -4px 5px -4px #474747; }
+}
+
+@-moz-keyframes colorChange {
+    0%  { box-shadow: -2px -4px 5px -4px #474747; }
+    50% { box-shadow: -2px -4px 5px -4px #00FF00; }
+    100%{ box-shadow: -2px -4px 5px -4px #474747; }
 }
 
 .img-content > p {
@@ -177,6 +208,8 @@ body {
 .contact-link > a {
     text-decoration: none;
     color: #6adbd6;
+    transition: 0.5s;
+    animation-timing-function: ease-in-out;
 }
 
 .contact-link > a:hover {
@@ -222,4 +255,3 @@ body {
     50% { opacity:0; }
     100% { opacity:1; }
 }
-

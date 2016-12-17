@@ -27,36 +27,43 @@
 
 <body>
 
-    <nav class="nav navbar-inverse">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
                     $
                     <span class="brand"></span>
                     <span class="typed-cursor"></span>
                 </a>
             </div>
-            <ul class="nav navbar-nav pull-right">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Resume</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#" onclick="downloadAlert()">Resume</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
 <!--Page Content-->
     <div class="container-fluid">
         <div class="row">
-            <div class="widget">
+            <div class="widget" id="about">
                 <div class="col-lg-6 hidden-xs-down">
                     <img class="img-responsive" src="assets/img/code2.png" alt=". . .">
                 </div>
                 <div class="col-lg-6 col-xs-12">
                     <div class="widget-content">
                         <div class="header">
-                            <span> Hi! I'm Rohan.</span>
+                            <span> Hi! I'm <b>Rohan</b></span>
                         </div>
                         <div class="widget-body">
                             <p>
@@ -72,7 +79,7 @@
         <hr class="special-hr">
         <!-- Portfolio -->
         <div class="row">
-            <div class="widget">
+            <div class="widget" id="projects">
                 <div class="widget-content">
                     <div class="header center">
                         <h1> My Projects </h1>
@@ -125,13 +132,13 @@
         <hr class="special-hr">
         <!-- Skills -->
         <div class="row">
-            <div class="widget">
+            <div class="widget" id="skills">
                 <div class="widget-content">
                     <div class="header center">
                         <h1> My Skills </h1>
                         <hr>
                     </div>
-                    <div class="widget-body">
+                    <div class="widget-body container">
                         <div class="col-xs-12 col-lg-6">
                             <div class="brace">{</div>
                             <div class="skill-item" style="margin-left: 1em">
@@ -166,13 +173,13 @@
         </div>
         <hr class="special-hr">
         <div class="row">
-            <div class="widget">
+            <div class="widget" id="contact">
                 <div class="widget-content">
                     <div class="header center">
                         <h1> Contact Me</h1>
                         <hr>
                     </div>
-                    <div class="widget-body">
+                    <div class="widget-body container">
                         <div class="col-xs-12 col-lg-6">
                             
                             <div class="brace">{</div>
@@ -288,12 +295,29 @@
     <script>
         $("document").ready(function () {
             $(".brand").typed({
-                strings: ["Rohan Anand"],
-                typeSpeed: 100
+                strings: ["Rohan <b>Anand</b>"],
+                typeSpeed: 75
             });
         });
     </script>
 
+    <!-- Smooth Scroll -->
+    <script>
+        $(function() {
+            $('a[href*="#"]:not([href="#"])').click(function() {
+                if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                    if (target.length) {
+                        $('html, body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
