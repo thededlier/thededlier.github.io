@@ -169,7 +169,7 @@ body {
     width: 300px;
     height: 200px;
     text-shadow: 0 0 3px #000;
-    transition: 2s;
+    transition: 1s;
     animation-timing-function: ease-in;
 }
 
@@ -184,14 +184,15 @@ body {
         width: 200px;
         height: 80px;
         text-shadow: 0 0 3px #000;
-        transition: 2s;
+        transition: 1s;
         animation-timing-function: ease-in;
     }
 }
 
 #portfolio .item:hover > .img-content {
     background: rgb(39, 40, 34); /* For older browsers */
-    background: rgba(39, 40, 34, 0.9);
+    background: rgba(39, 40, 34, 0.99);
+    box-shadow: 0px 0px 3px 2px #888888;
 }
 
 #portfolio .item:hover > .img-content > h1 {
@@ -200,6 +201,12 @@ body {
 
 #portfolio .item:hover > .img-content > p {
     color: #ffffff;
+}
+
+.company {
+    font-size: 13px;
+    color: #0065ad;
+    margin-right: 10px; 
 }
 
 .skill-item {
