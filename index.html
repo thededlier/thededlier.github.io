@@ -251,6 +251,22 @@
       </div>
     </footer>
 
+    <!-- Website not ready alert -->
+    <script type="text/javascript">
+        $("document").ready(function() {
+            swal({
+                title: "This website is currently in Developement",
+                text: "You can still check it out",
+                type: "info",
+                confirmButtonText: "Continue",
+                closeOnConfirm: true,
+                showCancelButton: false,
+                allowOutsideClick: true,
+                allowEscapeKey: true
+            });
+        });
+    </script>
+
     <!-- Download Resumes alert function -->
     <script type="text/javascript">
         function downloadAlert() {
