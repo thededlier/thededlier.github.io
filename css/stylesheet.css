@@ -21,7 +21,7 @@ body {
 }
 
 .semi-bold {
-    font-weight: 700;
+    font-weight: 800;
 }
 
 /* Hover Float Button */
@@ -100,7 +100,7 @@ body {
 .widget-body > p {
     text-align: left;
     color: #ffffff;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 #portfolio .item img {
@@ -134,7 +134,7 @@ body {
 }
 
 .img-content > p {
-    color: #00ff00;
+    color: #ffffff;
     padding: 0 7px 0px 7px;
     text-align: left;
     transition: 2s;
